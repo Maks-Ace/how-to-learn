@@ -60,7 +60,6 @@
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
     height: 568px;
     width: 568px;
@@ -93,32 +92,89 @@
 
 /* DESCRIPTION _ Секция описание */
 
-.two-columns {
+.description {
+  display: flex;
+  justify-content: center;
+}
 
+.two-columns {
+  display: flex;
+  width: 80%;
+  margin: 100px 0px;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
-
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
 }
 
 .two-columns__main-text {
-
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
 
+.two-columns__paragraph:not(:last-of-type) {
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* DIGITS _ Секция цифры*/
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+}
+
+.table {
 
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.table__cell {
+
+}
+
 .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.table__heading {
+
+}
+
+.table__text {
+
 }
 
 /* FOOTER _ Подвал сайта*/
