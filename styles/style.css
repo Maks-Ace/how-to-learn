@@ -32,7 +32,7 @@
   margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
-  font-weight: bolder;
+  font-weight: bold;
   /* delete later:*/
   z-index: 2;
 }
@@ -45,10 +45,16 @@
   z-index: 2;
   line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .header__link {
+  text-decoration: none;
   color: #2f80ed;
+}
+
+.link:hover {
+  color: red;
 }
 
 .header__main-illustration {
@@ -130,7 +136,7 @@
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /* DIGITS _ Секция цифры*/
@@ -148,7 +154,7 @@
   margin: auto;
   line-height: 69px;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .section-subtitle {
@@ -162,17 +168,15 @@
 }
 
 .table {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   width: 1100px;
   display: flex;
   flex-flow: row wrap;
-
-}
-
-.table__row {
-  width: 100%;
-  display: flex;
   justify-content: space-between;
 }
+
 
 .table__cell {
   margin-top: 60px;
@@ -180,13 +184,14 @@
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .table__text {
-  margin-top: 20px;
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -214,7 +219,7 @@
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .feinman__subtitle {
@@ -266,8 +271,6 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
 }
 
@@ -314,8 +317,11 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   flex-direction: column;
   align-items: flex-start;
@@ -323,12 +329,10 @@
 }
 
 .footer__column_content_info {
-  display: flex;
   flex-direction: column;
 }
 
 .footer__column_content_social {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -347,16 +351,20 @@
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .footer__column-links {
+  margin: 0;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* из задания не совсем понял концепцию элементов со ссылками,
