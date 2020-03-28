@@ -154,34 +154,47 @@
         </div>
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
-          <ul class="footer__column-links">
-            <li><a class="footer__column-link link" href="#">Главная</a></li>
-            <li><a class="footer__column-link link" href="#">Концепция</a></li>
-            <li><a class="footer__column-link link" href="#">Наставники</a></li>
-          </ul>
+          <!--
+             Перед прошлым отпралением поставил тэг нав, перечитывал докумекнтацию, там есть кусок:
+
+               Не обязательно все ссылки должны быть обернуты в <nav>. <nav> следует использовать лишь для главных навигационных блоков.
+               Например, <footer>  часто содержит список ссылок, которые не стоит оборачивать в <nav> .
+
+            Решил, вдруг это тот случай и удалил, зря=)
+
+          -->
+          <nav>
+            <ul class="footer__column-links">
+              <li><a class="footer__column-link link" href="#">Главная</a></li>
+              <li><a class="footer__column-link link" href="#">Концепция</a></li>
+              <li><a class="footer__column-link link" href="#">Наставники</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
-          <ul class="footer__column-links">
-            <li>
-              <a class="footer__column-link link" href="https://www.facebook.com/">
-                <img class="footer__social-icon" src="./images/facebook_white.svg" alt="логотип Facebook">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a class="footer__column-link link" href="https://vk.com/">
-                <img class="footer__social-icon" src="./images/vk_white.svg" alt="Логотип ВКонтакте">
-                ВКотакте
-              </a>
-            </li>
-            <li>
-              <a class="footer__column-link link" href="https://www.instagram.com/">
-                <img class="footer__social-icon" src="./images/instagram_white.svg" alt="логотип Instagram">
-                Instagram
-              </a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="footer__column-links">
+              <li>
+                <a class="footer__column-link link" href="https://www.facebook.com/">
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="логотип Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link link" href="https://vk.com/">
+                  <img class="footer__social-icon" src="./images/vk_white.svg" alt="Логотип ВКонтакте">
+                  ВКотакте
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link link" href="https://www.instagram.com/">
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="логотип Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
