@@ -7,14 +7,13 @@
   <meta name="description" content="Проектная работа 1 Максима Тузова на Яндекс Парктикум">
   <meta name="keywords" content="html, css">
   <meta name="author" content="Максим Тузов">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 
 <body>
   <div class="page">
-    <header class="header">
+    <header class="test-frame header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
@@ -22,19 +21,20 @@
         <a class="header__link link" href="#">Узнать →</a>
       </p>
       <img class="header__main-illustration" src="./images/two_again.png" alt="two_again.png" />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main>
-      <section class="description">
+      <section class="test-frame description">
         <div class="two-columns">
           <h2 class="two-columns__brief">
             Главные проблемы в обучении
           </h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
-              Ни в шклоле, ни в институте нас не учат тому, как правильно изучать материла.
-              Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест,
-              но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
+              Ни в шклоле, ни в институте нас не учат тому, как правильно изучать материла. Мы готовимся к экзаменам и
+              учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не
+              дает нам реального знания. Зубрежка быстро
+              выветривается и не приносит пользы.
             </p>
             <p class="two-columns__paragraph">
               <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где
@@ -42,14 +42,30 @@
             </p>
             <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению, сдалать его эффективным и
-              захватывающим.
-              Эти же техники применяются на примере обучения в Практикуме.
+              захватывающим. Эти же техники применяются на примере обучения в Практикуме.
             </p>
           </div>
         </div>
       </section>
+      <section class="test-frame tecniques">
 
-      <section class="digits">
+      </section>
+
+      <section class="test-frame video">
+
+      </section>
+
+      <section class="oakley">
+
+      </section>
+
+      <section class="test-frame feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a class="feynman__link link" href="#">Подробнее →</a>
+      </section>
+
+      <section class="test-frame digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
@@ -91,13 +107,11 @@
         </ul>
       </section>
 
-      <section class="feinman">
-        <h2 class="feinman__title">Метод Фейнмана</h2>
-        <p class="feinman__subtitle">Выучить и не забыть.</p>
-        <a class="feinman__link link" href="#">Подробнее →</a>
+      <section class="test-frame khan">
+
       </section>
 
-      <section class="kaufman">
+      <section class="test-frame kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">От Джоша Кауфмана</p>
         <ul class="table table_theme_dark">
@@ -145,8 +159,13 @@
         </ul>
         <div class="kaufman__triangle"></div>
       </section>
+
+      <section class="test-frame resources">
+
+      </section>
+
     </main>
-    <footer class="footer">
+    <footer class="test-frame footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <div class="logo logo_place_footer"></div>
@@ -154,15 +173,6 @@
         </div>
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
-          <!--
-             Перед прошлым отпралением поставил тэг нав, перечитывал докумекнтацию, там есть кусок:
-
-               Не обязательно все ссылки должны быть обернуты в <nav>. <nav> следует использовать лишь для главных навигационных блоков.
-               Например, <footer>  часто содержит список ссылок, которые не стоит оборачивать в <nav> .
-
-            Решил, вдруг это тот случай и удалил, зря=)
-
-          -->
           <nav>
             <ul class="footer__column-links">
               <li><a class="footer__column-link link" href="#">Главная</a></li>
@@ -177,20 +187,17 @@
             <ul class="footer__column-links">
               <li>
                 <a class="footer__column-link link" href="https://www.facebook.com/">
-                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="логотип Facebook">
-                  Facebook
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="логотип Facebook"> Facebook
                 </a>
               </li>
               <li>
                 <a class="footer__column-link link" href="https://vk.com/">
-                  <img class="footer__social-icon" src="./images/vk_white.svg" alt="Логотип ВКонтакте">
-                  ВКотакте
+                  <img class="footer__social-icon" src="./images/vk_white.svg" alt="Логотип ВКонтакте"> ВКотакте
                 </a>
               </li>
               <li>
                 <a class="footer__column-link link" href="https://www.instagram.com/">
-                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="логотип Instagram">
-                  Instagram
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="логотип Instagram"> Instagram
                 </a>
               </li>
             </ul>
