@@ -2,7 +2,6 @@
 @import url("./_place/logo_place_footer.css");
 
 .logo {
-    background-image: url('../../images/logo.svg');
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 2;
