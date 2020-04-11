@@ -1,6 +1,10 @@
 @import url("./_theme/table__cell_theme_dark.css");
+@import url("./_theme/table__cell_theme_lite.css");
+
+/* Добавил модификатор светлой темы и св-во margin перенес туда,
+ что бы не было наложений с темной темой и не пришлось мудрить
+ с последовательность импорта css файлов*/
 
 .table__cell {
-  margin-top: 60px;
-  width: 250px;
+  max-width: 250px;
 }
